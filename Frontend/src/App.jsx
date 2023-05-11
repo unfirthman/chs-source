@@ -4,6 +4,10 @@
 import './App.css'
 import ChsPourHouse from './Components/venueReact/chsPourHouse/chsPourHouse';
 import MusicFarm from './Components/venueReact/musicFarm/musicFarm';
+import MusicHall from './Components/venueReact/musicHall/musicHall';
+import RoyalAmerican from './Components/venueReact/royalAmerican/royalAmerican';
+import Theater99 from './Components/venueReact/theater99/theater99';
+import WindJammer from './Components/venueReact/windJammer/windJammer';
 
 
 const App = () => {
@@ -22,6 +26,18 @@ const App = () => {
                     </div>
                     <div className='music-farm'>
                         <MusicFarm />
+                    </div>
+                    <div className='music-hall'>
+                    <MusicHall />
+                    </div>
+                    <div className='royal-american'>
+                    <RoyalAmerican />
+                    </div>
+                    <div className='theater-99'>
+                    <Theater99 />
+                    </div>
+                    <div className='windjammer'>
+                    <WindJammer />
                     </div>
                 </main>
             </body>

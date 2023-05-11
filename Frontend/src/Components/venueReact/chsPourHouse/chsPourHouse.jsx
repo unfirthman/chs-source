@@ -1,5 +1,5 @@
 // chsPourHouse.jsx
-import "./chsPourHouse.css";
+import "../layout.css";
 import data from "../../../../../JSON/chs_pour_house.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
@@ -11,7 +11,9 @@ const ChsPourHouse = () => {
             date: item.date,
         };
     });
-    console.log(mappedData)
+
+    // Slice the array to display only the first 14 items
+    const slicedData = mappedData.slice(0, 14);
 
     return (
         <table>
@@ -21,7 +23,7 @@ const ChsPourHouse = () => {
                 </tr>
             </thead>
             <tbody>
-                {mappedData.map((item, index) => (
+                {slicedData.map((item, index) => (
                     <tr key={index}>
                         <td>{item.name}</td>
                         <td>{item.date}</td>

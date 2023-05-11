@@ -1,10 +1,9 @@
-// musicFarm.jsx
+// theater99.jsx
 import "../layout.css";
-import data from "../../../../../JSON/music_farm.json";
+import data from "../../../../../JSON/theater99.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
-
-const MusicFarm = () => {
+const Theater99 = () => {
     if (data === []){
         return null
     }
@@ -23,7 +22,7 @@ const MusicFarm = () => {
         <table>
             <thead>
                 <tr>
-                    <th>The Music Farm</th>
+                    <th>Theater 99</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,4 +37,4 @@ const MusicFarm = () => {
     );
 };
 
-export default MusicFarm;
+export default Theater99;

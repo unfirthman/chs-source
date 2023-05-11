@@ -1,10 +1,9 @@
-// musicFarm.jsx
+// gaillard.jsx
 import "../layout.css";
-import data from "../../../../../JSON/music_farm.json";
+import data from "../../../../../JSON/gaillard.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
-
-const MusicFarm = () => {
+const Gaillard = () => {
     if (data === []){
         return null
     }
@@ -23,7 +22,7 @@ const MusicFarm = () => {
         <table>
             <thead>
                 <tr>
-                    <th>The Music Farm</th>
+                    <th>The Gaillard Auditorium</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,4 +37,4 @@ const MusicFarm = () => {
     );
 };
 
-export default MusicFarm;
+export default Gaillard;
