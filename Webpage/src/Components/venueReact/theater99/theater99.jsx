@@ -4,7 +4,7 @@ import data from "../../../../../JSON/theater99.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
 const Theater99 = () => {
-    if (data === []){
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);

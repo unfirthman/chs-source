@@ -5,7 +5,7 @@ import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
 
 const MusicFarm = () => {
-    if (data === []){
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);

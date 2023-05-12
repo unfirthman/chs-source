@@ -4,7 +4,7 @@ import data from "../../../../../JSON/royal_american.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
 const RoyalAmerican = () => {
-    if (data === []){
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);

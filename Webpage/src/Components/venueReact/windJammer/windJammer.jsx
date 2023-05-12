@@ -4,7 +4,7 @@ import data from "../../../../../JSON/wind_jammer.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
 const WindJammer = () => {
-    if (data === []){
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);
