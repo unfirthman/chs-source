@@ -1,10 +1,10 @@
-// royalAmerican.jsx
+// windJammer.jsx
 import "../layout.css";
-import data from "../../../../../JSON/royal_american.json";
+import data from "../../../../../JSON/wind_jammer.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
-const RoyalAmerican = () => {
-    if (data === []){
+const WindJammer = () => {
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);
@@ -22,7 +22,7 @@ const RoyalAmerican = () => {
         <table>
             <thead>
                 <tr>
-                    <th>The Royal American</th>
+                    <th>The WindJammer</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,4 +37,4 @@ const RoyalAmerican = () => {
     );
 };
 
-export default RoyalAmerican;
+export default WindJammer;

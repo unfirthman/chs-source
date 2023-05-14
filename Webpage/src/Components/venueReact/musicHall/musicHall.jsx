@@ -1,11 +1,10 @@
-// musicFarm.jsx
+// musicHall.jsx
 import "../layout.css";
-import data from "../../../../../JSON/music_farm.json";
+import data from "../../../../../JSON/music_hall.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
-
-const MusicFarm = () => {
-    if (data === []){
+const MusicHall = () => {
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);
@@ -23,7 +22,7 @@ const MusicFarm = () => {
         <table>
             <thead>
                 <tr>
-                    <th>The Music Farm</th>
+                    <th>The Music Hall</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,4 +37,4 @@ const MusicFarm = () => {
     );
 };
 
-export default MusicFarm;
+export default MusicHall;

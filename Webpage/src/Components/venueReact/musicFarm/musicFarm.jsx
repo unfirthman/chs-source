@@ -1,10 +1,11 @@
-// windJammer.jsx
+// musicFarm.jsx
 import "../layout.css";
-import data from "../../../../../JSON/wind_jammer.json";
+import data from "../../../../../JSON/music_farm.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
-const WindJammer = () => {
-    if (data === []){
+
+const MusicFarm = () => {
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);
@@ -22,7 +23,7 @@ const WindJammer = () => {
         <table>
             <thead>
                 <tr>
-                    <th>The WindJammer</th>
+                    <th>The Music Farm</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,4 +38,4 @@ const WindJammer = () => {
     );
 };
 
-export default WindJammer;
+export default MusicFarm;

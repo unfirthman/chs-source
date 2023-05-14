@@ -1,10 +1,10 @@
-// musicHall.jsx
+// royalAmerican.jsx
 import "../layout.css";
-import data from "../../../../../JSON/music_hall.json";
+import data from "../../../../../JSON/royal_american.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
-const MusicHall = () => {
-    if (data === []){
+const RoyalAmerican = () => {
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);
@@ -22,7 +22,7 @@ const MusicHall = () => {
         <table>
             <thead>
                 <tr>
-                    <th>The Music Hall</th>
+                    <th>The Royal American</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,4 +37,4 @@ const MusicHall = () => {
     );
 };
 
-export default MusicHall;
+export default RoyalAmerican;
