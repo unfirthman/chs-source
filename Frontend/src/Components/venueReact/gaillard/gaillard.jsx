@@ -4,7 +4,7 @@ import data from "../../../../../JSON/gaillard.json";
 import { replaceSkippedNumbers } from "../replaceSkippedNumbers";
 
 const Gaillard = () => {
-    if (data === []){
+    if (data == []){
         return null
     }
     const filterData = replaceSkippedNumbers(data, 0);
