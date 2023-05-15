@@ -40,6 +40,9 @@ const App = () => {
                     <WindJammer />
                     </div>
                 </main>
+            <footer>
+                <a href='https://unfirthman.github.io/new-hanf-react-portfolio/'>Designed by michael hanf.</a>
+            </footer>
             </body>
   );
 };
